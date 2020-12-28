@@ -7,7 +7,12 @@ export const Competitions = () => {
     <div>
       <h1>Competitions</h1>
       <div className='carousel-container'>
-        <Carousel className='carousel-element'></Carousel>
+        <h2>Carousel</h2>
+        <div className='carousel-element'></div>
+        <div className='button-container'>
+          <button className='prev'>prev</button>
+          <button className='next'>next</button>
+        </div>
       </div>
     </div>
   );

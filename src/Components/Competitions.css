@@ -1,13 +1,35 @@
-.carousel-container {
+/* .test-container {
   display: flex;
+} */
+
+.carousel-container {
+  display: block;
   position: relative;
   width: 80%;
   height: 90vh;
-  /* height: 80%; */
-  /* justify-content: center; */
-  margin: 0 auto;
+  /* height: 800px; */
+  justify-content: center;
+  margin: 25% auto;
 }
 
 .carousel-element {
+  display: flex;
   align-self: center;
+  box-shadow: 10px 5px 40px 20px;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+}
+
+.carousel-element:hover {
+  box-shadow: 10px 5px 40px 20px;
+  cursor: pointer;
+  width: 81%;
+  height: 51%;
+}
+
+.button-container {
+  display: block;
+  left: 0;
+  /* position: fixed; */
 }
