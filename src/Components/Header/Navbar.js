@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { links } from '../data';
+import { links } from '../../data';
 import { FaBars } from 'react-icons/fa';
-import logo from '../logo.svg';
+import logo from '../../assets/logo/logo.svg';
 
-export const Navbar = () => {
+export const Navbar = ({ sticky }) => {
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
@@ -18,7 +18,7 @@ export const Navbar = () => {
   }, [showLinks]);
 
   return (
-    <nav>
+    <nav className='navbar'>
       <div className='nav-center'>
         <div className='nav-header'>
           <img src={logo} alt='logo' />

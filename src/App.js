@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 
-import { Navbar } from './Components/Navbar';
+import { Navbar } from './Components/Header/Navbar';
 import { Home } from './Components/Home';
 import { About } from './Components/About';
 import { Team } from './Components/Team';
@@ -12,16 +11,16 @@ function App() {
     <div className='App'>
       <Navbar />
       <div>
-        <section id='home'>
+        <section className='sec-1' id='home'>
           <Home />
         </section>
-        <section id='about'>
+        <section className='sec-2' id='about'>
           <About />
         </section>
-        <section id='competitions'>
+        <section className='sec-3' id='competitions'>
           <Competitions />
         </section>
-        <section id='team'>
+        <section className='sec-4' id='team'>
           <Team />
         </section>
       </div>
