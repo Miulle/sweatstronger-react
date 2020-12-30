@@ -9,8 +9,8 @@ import { Competitions } from './Components/Competitions';
 function App() {
   return (
     <div className='App'>
-      <Navbar />
       <div>
+        <Navbar />
         <section className='sec-1' id='home'>
           <Home />
         </section>

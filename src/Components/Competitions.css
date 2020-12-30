@@ -4,20 +4,20 @@
 
 .carousel-container {
   display: block;
-  position: relative;
+  /* position: relative; */
   width: 80%;
-  height: 90vh;
-  /* height: 800px; */
+  height: 60vh;
   justify-content: center;
-  margin: 25% auto;
+  margin: 5% auto;
+  /* box-shadow: 10px 5px 40px 20px; */
 }
 
 .carousel-element {
   display: flex;
   align-self: center;
-  box-shadow: 10px 5px 40px 20px;
+  box-shadow: 10px 5px 40px rgba(0, 0, 0, 0.8);
   width: 80%;
-  height: 50%;
+  height: 60%;
   margin: auto;
 }
 
@@ -25,11 +25,34 @@
   box-shadow: 10px 5px 40px 20px;
   cursor: pointer;
   width: 81%;
-  height: 51%;
+  height: 60%;
 }
 
 .button-container {
   display: block;
   left: 0;
   /* position: fixed; */
+}
+
+.prev,
+.next {
+  display: inline-block;
+  background: hsl(200, 90%, 76%);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 10px;
+  border-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  /* transition: var(--transition); */
+}
+
+.prev:hover,
+.next:hover {
+  filter: brightness(80%);
 }

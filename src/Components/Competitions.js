@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
+import { CSSTransitionGroup } from 'react-transition-group';
 import './Competitions.css';
 
 export const Competitions = () => {
